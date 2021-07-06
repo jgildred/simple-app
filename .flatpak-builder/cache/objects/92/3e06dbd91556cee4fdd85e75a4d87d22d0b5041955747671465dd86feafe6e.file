@@ -1,0 +1,5 @@
+[Runtime]
+name=com.github.jgildred.gtk_hello.Debug
+
+[ExtensionOf]
+ref=app/com.github.jgildred.gtk-hello/x86_64/master

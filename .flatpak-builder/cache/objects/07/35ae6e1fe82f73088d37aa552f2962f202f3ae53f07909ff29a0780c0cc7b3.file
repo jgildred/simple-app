@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 John Gildred  <274078+jgildred@users.noreply.github.com> -->
+<component type="desktop">
+  <id>com.github.jgildred.simple-app</id>
+  <metadata_license>CCO</metadata_license>
+  <name>Simple App</name>
+  <summary>An app that is simple to use.</summary>
+  <description>
+    <p>A simple app that does very little.</p>
+  </description>
+  <custom>
+    <value key="x-appcenter-color-primary">#603461</value>
+    <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+    <value key="x-appcenter-suggested-price">5</value>
+  </custom>
+</component>

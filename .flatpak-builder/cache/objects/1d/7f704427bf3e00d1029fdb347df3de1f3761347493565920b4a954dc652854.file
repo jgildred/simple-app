@@ -1,0 +1,4 @@
+[Application]
+name=com.github.jgildred.gtk-hello
+runtime=io.elementary.Platform/x86_64/daily
+sdk=io.elementary.Sdk/x86_64/daily

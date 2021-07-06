@@ -1,0 +1,22 @@
+[Application]
+name=com.github.jgildred.gtk-hello
+runtime=io.elementary.Platform/x86_64/daily
+sdk=io.elementary.Sdk/x86_64/daily
+command=com.github.jgildred.gtk-hello
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+
+[Extension com.github.jgildred.gtk_hello.Locale]
+directory=share/runtime/locale
+autodelete=true
+locale-subset=true
+
+[Extension com.github.jgildred.gtk_hello.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=com.github.jgildred.gtk_hello.Locale;com.github.jgildred.gtk_hello.Debug;

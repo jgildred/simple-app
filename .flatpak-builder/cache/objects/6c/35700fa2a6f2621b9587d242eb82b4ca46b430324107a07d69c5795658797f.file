@@ -1,0 +1,40 @@
+public class MyApp : Gtk.Application {
+    public MyApp () {
+        Object (
+            application_id: "com.github.jgildred.gtk-hello",
+            flags: ApplicationFlags.FLAGS_NONE
+        );
+    }
+    
+    protected override void activate () {
+        var button = new Gtk.Button.with_label (_("Click me!"));
+        
+        var label = new Gtk.Label (null);
+        
+        var grid = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL,
+            row_spacing = 6
+        };
+        
+        var main_window = new Gtk.ApplicationWindow (this) {
+            default_height = 300,
+            default_width = 300,
+            title = _("Hello World")
+        };
+        
+        grid.add (button);
+        grid.add (label);
+        main_window.add (grid);
+        
+        button.clicked.connect (() => {
+            label.label = _("Hellow World!");
+            button.sensitive = false;
+        });
+        
+        main_window.show_all ();
+    }
+    
+    public static int main () {
+        return new MyApp ().run ();
+    }
+}

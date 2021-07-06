@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Simple App
+GenericName=Simple App
+Comment=Simple to use
+Categories=Utility;Education;
+Exec=com.github.jgildred.simple-app
+Icon=com.github.jgildred.simple-app
+Terminal=false
+Type=Application
+Keywords=Simple;App;Easy

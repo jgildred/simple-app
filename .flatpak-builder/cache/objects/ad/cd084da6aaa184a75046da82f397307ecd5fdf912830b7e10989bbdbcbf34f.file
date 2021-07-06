@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GTK Hello
+GenericName=Hello World App
+Comment=Proves that we can make an app
+Categories=Utility;Education;
+Exec=com.github.jgildred.gtk-hello
+Icon=com.github.jgildred.gtk-hello
+Terminal=false
+Type=Application
+Keywords=Hello;World;Example;

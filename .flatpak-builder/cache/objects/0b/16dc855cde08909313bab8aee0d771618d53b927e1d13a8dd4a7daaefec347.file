@@ -1,0 +1,22 @@
+[Application]
+name=com.github.jgildred.simple-app
+runtime=io.elementary.Platform/x86_64/daily
+sdk=io.elementary.Sdk/x86_64/daily
+command=com.github.jgildred.simple-app
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+
+[Extension com.github.jgildred.simple_app.Locale]
+directory=share/runtime/locale
+autodelete=true
+locale-subset=true
+
+[Extension com.github.jgildred.simple_app.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=com.github.jgildred.simple_app.Locale;com.github.jgildred.simple_app.Debug;
